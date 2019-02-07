@@ -1,10 +1,7 @@
-import readlineSync from 'readline-sync'; // библиотека для чтения пользовательского ввода; https://github.com/anseki/readline-sync
+import readlineSync from 'readline-sync'; // импорт библиотеки для чтения пользовательского ввода
 
 export const greeting = () => {
-    const username = readlineSync.question('May I have your name? ');
-    if (username === '') {
-        console.log('Hello, anonymous!');
-    } else {
-        console.log('Hello, ${username}!');
-    }
-}
+  console.log('Welcome to the Brain Games!');
+  const username = readlineSync.question('May I have your name? ');
+  console.log(`Hello, ${username}`);
+};
