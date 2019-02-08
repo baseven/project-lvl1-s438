@@ -1,13 +1,14 @@
 {
   "name": "ba_hexlet-project1",
-  "version": "1.0.5",
+  "version": "1.1.5",
   "description": "brain-games project",
   "keywords": [
     "logical thinking",
     "educational project"
   ],
   "bin": {
-    "brain-games": "dist/bin/brain-games.js"
+    "brain-games": "dist/bin/brain-games.js",
+    "brain-even": "dist/bin/brain-even.js"
   },
   "files": [
     "dist"
