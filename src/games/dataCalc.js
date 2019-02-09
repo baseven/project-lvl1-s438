@@ -17,17 +17,17 @@ const gameData = () => {
 
   switch (genSign) {
     case 1:
-      correctAnswer =  genFirstNum + genSecondNum;
+      correctAnswer = genFirstNum + genSecondNum;
       question = `${genFirstNum} + ${genSecondNum}`;
       break;
 
     case 2:
-      correctAnswer =  genFirstNum - genSecondNum;
+      correctAnswer = genFirstNum - genSecondNum;
       question = `${genFirstNum} - ${genSecondNum}`;
       break;
 
     default:
-      correctAnswer =  genFirstNum * genSecondNum;
+      correctAnswer = genFirstNum * genSecondNum;
       question = `${genFirstNum} * ${genSecondNum}`;
       break;
   }
