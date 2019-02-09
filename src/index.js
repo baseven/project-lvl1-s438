@@ -1,41 +1,32 @@
+import { car, cdr } from 'hexlet-pairs';
 import readlineSync from 'readline-sync'; // import library for reading user input
 
-const greeting = () => {
-    console.log('\nWelcome to the Brain Games!');
+const gameEngine = (gameTask, gameData) => {
+  console.log('\nWelcome to the Brain Games!');
+  console.log(gameTask); // displays a description of the task
+
+  const userName = readlineSync.question('\nMay I have your name? ');
+  console.log(`Hello, ${userName}!`);
+
+  const setNumOfQuest = 3; // sets the number of questions
+
+  for (let counter = 1; counter <= setNumOfQuest; counter += 1) {
+    const data = gameData();
+    const correctAnswer = car(data);
+    const question = cdr(data);
+    
+    console.log(`\nQuestion: ${question}`);
+    const userAnswer = readlineSync.question('Your answer: '); // returns user response
+
+    if (correctAnswer === userAnswer) {
+      console.log('Correct!');
+    } else {
+      console.log(`"${userAnswer}" is wrong answer ;(. Correct answer was "${correctAnswer}".`);
+      console.log(`Let"s try again, ${userName}!`);
+      return;
+    }
+  }
+  console.log(`Congratulations, ${userName}!`);
 };
 
-const greetingEven = () => {
-    greeting();
-    console.log('Answer "yes" if number even otherwise answer "no".');
-};
-
-const userId = () => {
-    const userName = readlineSync.question('\nMay I have your name? ');
-    console.log(`Hello, ${userName}!`);
-    return userName;
-};
-
-const parityCheck = () => {
-    greetingEven();
-    const userName = userId();
-
-    const setTheNumber = 3; //sets the number of questions
-    const minNum = 0;       //sets the range of numbers
-    const maxNum = 100;
-
-    for (let counter = 1; counter <= setTheNumber; counter+=1) {
-        const genNum = Math.round(Math.random()* (maxNum - minNum) + minNum); // Генерирует случ. число, окр. до целого, между minNum (вкл.) и maxNum (не вкл. max).
-        console.log(`\nQuestion: ${genNum}`);
-        const userAnswer = readlineSync.question('Your answer: ');
-
-        const checkNum = (genNum%2 === 0) ? 'yes' : 'no'; // ternary operation that checks parity
-        
-        if (checkNum === userAnswer) {
-            console.log('Correct!');
-        } else {
-            return console.log(`\n'${userAnswer}' is wrong answer ;(. Correct answer was '${checkNum}'.\nLet's try again, ${userName}!`);
-        }
-    } return console.log(`Congratulations, ${userName}!`);
-}
-
-export { greeting, greetingEven, userId, parityCheck };
+export default gameEngine;
