@@ -5,5 +5,9 @@
 
 brain-even. package installation and game launch
 [![asciicast](https://asciinema.org/a/AaWtd5LSUSd7POU4FhdtXrGbC.svg)](https://asciinema.org/a/AaWtd5LSUSd7POU4FhdtXrGbC)
+
 brain-calc. package installation and game launch
 [![asciicast](https://asciinema.org/a/7TxnVTtodwWNZdIXo5gA67TBg.svg)](https://asciinema.org/a/7TxnVTtodwWNZdIXo5gA67TBg)
+
+brain-gcd. package installation and game launch
+[![asciicast](https://asciinema.org/a/aU3zul1MJX6DLZdvLp787PZxn.svg)](https://asciinema.org/a/aU3zul1MJX6DLZdvLp787PZxn)
