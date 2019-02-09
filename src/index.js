@@ -14,7 +14,7 @@ const gameEngine = (gameTask, gameData) => {
     const data = gameData();
     const correctAnswer = car(data);
     const question = cdr(data);
-    
+
     console.log(`\nQuestion: ${question}`);
     const userAnswer = readlineSync.question('Your answer: '); // returns user response
 
