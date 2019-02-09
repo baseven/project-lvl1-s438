@@ -3,5 +3,7 @@
 
 [![Build Status](https://travis-ci.com/baseven/project-lvl1-s438.svg?branch=master)](https://travis-ci.com/baseven/project-lvl1-s438)
 
-package installation and game launch
+brain-even. package installation and game launch
 [![asciicast](https://asciinema.org/a/AaWtd5LSUSd7POU4FhdtXrGbC.svg)](https://asciinema.org/a/AaWtd5LSUSd7POU4FhdtXrGbC)
+brain-calc. package installation and game launch
+[![asciicast](https://asciinema.org/a/7TxnVTtodwWNZdIXo5gA67TBg.svg)](https://asciinema.org/a/7TxnVTtodwWNZdIXo5gA67TBg)
