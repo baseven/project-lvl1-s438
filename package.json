@@ -1,6 +1,6 @@
 {
   "name": "ba_hexlet-project1",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "brain-games project",
   "keywords": [
     "logical thinking",
@@ -11,7 +11,8 @@
     "brain-even": "dist/bin/brain-even.js",
     "brain-calc": "dist/bin/brain-calc.js",
     "brain-gcd": "dist/bin/brain-gcd.js",
-    "brain-progression": "dist/bin/brain-progression.js"
+    "brain-progression": "dist/bin/brain-progression.js",
+    "brain-prime": "dist/bin/brain-prime.js"
   },
   "files": [
     "dist"
