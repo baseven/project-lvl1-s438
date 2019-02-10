@@ -7,10 +7,13 @@ brain-even. package installation and game launch
 [![asciicast](https://asciinema.org/a/AaWtd5LSUSd7POU4FhdtXrGbC.svg)](https://asciinema.org/a/AaWtd5LSUSd7POU4FhdtXrGbC)
 
 brain-calc. package installation and game launch
-[![asciicast](https://asciinema.org/a/7TxnVTtodwWNZdIXo5gA67TBg.svg)](https://asciinema.org/a/7TxnVTtodwWNZdIXo5gA67TBg)
+[![asciicast](https://asciinema.org/a/kJrnrM19DCYrDxmSsNP1JFSbi.svg)](https://asciinema.org/a/kJrnrM19DCYrDxmSsNP1JFSbi)
 
 brain-gcd. package installation and game launch
-[![asciicast](https://asciinema.org/a/aU3zul1MJX6DLZdvLp787PZxn.svg)](https://asciinema.org/a/aU3zul1MJX6DLZdvLp787PZxn)
+[![asciicast](https://asciinema.org/a/yF4439cH7htpfJx4Md077yXS6.svg)](https://asciinema.org/a/yF4439cH7htpfJx4Md077yXS6)
 
-brain-progression. installation and launch
-[![asciicast](https://asciinema.org/a/WIFp8TDKH4fLBMUiBXBIpTibv.svg)](https://asciinema.org/a/WIFp8TDKH4fLBMUiBXBIpTibv)
+brain-progression. package installation and game launch
+[![asciicast](https://asciinema.org/a/Sxj7SkWaUPUvokL7AP5hNA6nQ.svg)](https://asciinema.org/a/Sxj7SkWaUPUvokL7AP5hNA6nQ)
+
+brain-prime. package installation and game launch
+[![asciicast](https://asciinema.org/a/JFTLr9mqWhqO0MD4JlssCKkUP.svg)](https://asciinema.org/a/JFTLr9mqWhqO0MD4JlssCKkUP)
