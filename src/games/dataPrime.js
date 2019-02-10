@@ -7,20 +7,17 @@ const gameTask = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 const minNum = 0; // sets the lower limit of the range of integers
 const maxNum = 100; // sets the upper limit of the range of integers
 
-const findSmallestDiv = (num) => {
-  const iter = (acc) => {
-    if (acc > num / 2) {
-      return num;
+const isPrime = (num) => {
+  if (num < 2) {
+    return false;
+  }
+  for (let counter = 2; counter <= Math.sqrt(num); counter += 1) {
+    if (num % counter === 0) {
+      return false;
     }
-    if (num % acc === 0) {
-      return acc;
-    }
-    return iter(acc + 1);
-  };
-  return iter(2);
+  }
+  return true;
 };
-
-const isPrime = num => findSmallestDiv(num) === num;
 
 const gameData = () => {
   const num = genNum(minNum, maxNum);

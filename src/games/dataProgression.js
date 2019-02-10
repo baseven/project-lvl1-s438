@@ -24,10 +24,10 @@ const gameData = () => {
   const positionOfHidden = genNum(0, lengthProgression - 1); // sets the sequence number
   const progression = genProgression(firstElement, step, lengthProgression, positionOfHidden);
 
-  const question = progression;
+  const question = progression.trim();
   const correctAnswer = firstElement + step * positionOfHidden;
 
-  return cons(String(correctAnswer), question.trim());
+  return cons(String(correctAnswer), question);
 };
 
 export default () => gameEngine(gameTask, gameData);
