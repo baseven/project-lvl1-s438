@@ -10,10 +10,10 @@ const minStep = 1; // sets the range for step of the progression
 const maxStep = 5;
 const lengthProgression = 10; // sets the length of the progression
 
-const genProgression = (firstElement, step, length, hiddenElement) => {
+const genProgression = (firstElement, step, length, hidden) => {
   let progression = '';
   for (let counter = 0; counter < length; counter += 1) {
-    progression += (counter !== hiddenElement) ? `${firstElement + step * counter} ` : '.. ';
+    progression += (counter !== hidden) ? `${firstElement + step * counter} ` : '.. ';
   }
   return progression;
 };
@@ -21,13 +21,13 @@ const genProgression = (firstElement, step, length, hiddenElement) => {
 const gameData = () => {
   const firstElement = genNum(minFirstElement, maxFirstElement);
   const step = genNum(minStep, maxStep);
-  const hiddenElement = genNum(0, lengthProgression - 1); // sets the sequence number
-  const progression = genProgression(firstElement, step, lengthProgression, hiddenElement);
+  const positionOfHidden = genNum(0, lengthProgression - 1); // sets the sequence number
+  const progression = genProgression(firstElement, step, lengthProgression, positionOfHidden);
 
   const question = progression;
-  const correctAnswer = firstElement + step * hiddenElement;
+  const correctAnswer = firstElement + step * positionOfHidden;
 
-  return cons(String(correctAnswer), question);
+  return cons(String(correctAnswer), question.trim());
 };
 
 export default () => gameEngine(gameTask, gameData);
