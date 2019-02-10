@@ -1,5 +1,5 @@
 #! /usr/bin/env node
 
-import { greeting } from '..'; // импорт функции приветствия/иниц. пользователя
+// import { greeting } from '..'; "user greeting" function
 
-greeting(); // Hello, <usermane>
+// greeting(); // Hello, <usermane>!

@@ -1,30 +1,30 @@
 import { cons } from 'hexlet-pairs';
 import gameEngine from '..';
+import genNum from '../utils';
 
 const gameTask = 'Find the greatest common divisor of given numbers.';
 
-const findGreatComDiv = (firstNum, secondNum) => {
-  const maxNum = Math.max(firstNum, secondNum);
-  const minNum = Math.min(firstNum, secondNum);
+const minNum = 0; // sets the lower limit of the range of integers
+const maxNum = 100; // sets the upper limit of the range of integers
 
-  if (minNum === 0) {
-    return Math.abs(maxNum); // Math.abs will be used when negative numbers
+const findGreatComDiv = (firstNum, secondNum) => {
+  const min = Math.min(firstNum, secondNum);
+  const max = Math.max(firstNum, secondNum);
+
+  if (min === 0) {
+    return max;
   }
-  return findGreatComDiv(minNum, maxNum % minNum);
+  return findGreatComDiv(min, max % min);
 };
 
 const gameData = () => {
-  const minNum = 0; // sets the lower limit of the range of integers
-  const maxNum = 100; // sets the upper limit of the range of integers
-
-  const genFirstNum = Math.round(Math.random() * (maxNum - minNum) + minNum);
-  const genSecondNum = Math.round(Math.random() * (maxNum - minNum) + minNum);
+  const genFirstNum = genNum(minNum, maxNum);
+  const genSecondNum = genNum(minNum, maxNum);
 
   const question = `${genFirstNum} ${genSecondNum}`;
   const correctAnswer = findGreatComDiv(genFirstNum, genSecondNum);
 
   return cons(String(correctAnswer), question);
 };
-const brainGcd = () => gameEngine(gameTask, gameData);
 
-export default brainGcd;
+export default () => gameEngine(gameTask, gameData);

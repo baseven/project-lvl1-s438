@@ -1,14 +1,14 @@
 import { car, cdr } from 'hexlet-pairs';
 import readlineSync from 'readline-sync'; // import library for reading user input
 
+const setNumOfQuest = 3; // sets the number of questions
+
 const gameEngine = (gameTask, gameData) => {
   console.log('\nWelcome to the Brain Games!');
   console.log(gameTask); // displays a description of the task
 
   const userName = readlineSync.question('\nMay I have your name? ');
   console.log(`Hello, ${userName}!`);
-
-  const setNumOfQuest = 3; // sets the number of questions
 
   for (let counter = 1; counter <= setNumOfQuest; counter += 1) {
     const data = gameData();

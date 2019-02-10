@@ -1,5 +1,6 @@
 import { cons } from 'hexlet-pairs';
 import gameEngine from '..';
+import genNum from '../utils';
 
 const gameTask = 'What is the result of the expression?';
 
@@ -8,9 +9,9 @@ const maxNum = 10; // sets the upper limit of the range of integers
 const numOfSign = 3; // sets the number of arithmetic operations
 
 const gameData = () => {
-  const genFirstNum = Math.round(Math.random() * (maxNum - minNum) + minNum);
-  const genSecondNum = Math.round(Math.random() * (maxNum - minNum) + minNum);
-  const genSign = Math.round(Math.random() * (numOfSign - 1) + 1);
+  const genFirstNum = genNum(minNum, maxNum);
+  const genSecondNum = genNum(minNum, maxNum);
+  const genSign = genNum(1, numOfSign);
 
   let correctAnswer = 0;
   let question = '';
@@ -33,6 +34,5 @@ const gameData = () => {
   }
   return cons(String(correctAnswer), question);
 };
-const brainCalc = () => gameEngine(gameTask, gameData);
 
-export default brainCalc;
+export default () => gameEngine(gameTask, gameData);
