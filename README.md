@@ -11,3 +11,6 @@ brain-calc. package installation and game launch
 
 brain-gcd. package installation and game launch
 [![asciicast](https://asciinema.org/a/aU3zul1MJX6DLZdvLp787PZxn.svg)](https://asciinema.org/a/aU3zul1MJX6DLZdvLp787PZxn)
+
+brain-progression. installation and launch
+[![asciicast](https://asciinema.org/a/WIFp8TDKH4fLBMUiBXBIpTibv.svg)](https://asciinema.org/a/WIFp8TDKH4fLBMUiBXBIpTibv)
