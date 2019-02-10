@@ -28,7 +28,7 @@ const startGame = () => {
       brainPrime();
       break;
     default:
-      console.log(`Let"s try again!`);
+      console.log('Let"s try again!');
   }
 };
 
