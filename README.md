@@ -21,10 +21,16 @@
 npm install -g ba_hexlet-project1
 ```
 ## Запуск
-Запуск приложения выполняется командой make start:
+Запуск приложения выполняется командой:
+```
+make start
+```
 [![asciicast](https://asciinema.org/a/gYS16wtgCylafRT8hHIb6TRk3.svg)](https://asciinema.org/a/gYS16wtgCylafRT8hHIb6TRk3)
 
-Для запуска конкретной игры можно воспользоваться командой make <имя игры>, например, make calc:
+Для запуска конкретной игры можно воспользоваться командой make <имя игры>, например:
+```
+make calc
+```
 [![asciicast](https://asciinema.org/a/DoFGhjaNregDxo1p9SxLR05eS.svg)](https://asciinema.org/a/DoFGhjaNregDxo1p9SxLR05eS)
 
 ## Описание игр:
