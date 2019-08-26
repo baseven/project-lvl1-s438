@@ -23,10 +23,10 @@ npm isntall -g ba_hexlet-project1
 ```
 ## Запуск
 Запуск приложения выполняется командой make start:
-[![asciicast](https://asciinema.org/a/gYS16wtgCylafRT8hHIb6TRk3.svg)](https://asciinema.org/a/gYS16wtgCylafRT8hHIb6TRk3)
+<script id="asciicast-gYS16wtgCylafRT8hHIb6TRk3" src="https://asciinema.org/a/gYS16wtgCylafRT8hHIb6TRk3.js" async></script>
 
 Для запуска конкретной игры можно воспользоваться командой make <имя игры>, например, make calc:
-[![asciicast](https://asciinema.org/a/DoFGhjaNregDxo1p9SxLR05eS.svg)](https://asciinema.org/a/DoFGhjaNregDxo1p9SxLR05eS)
+<script id="asciicast-DoFGhjaNregDxo1p9SxLR05eS" src="https://asciinema.org/a/DoFGhjaNregDxo1p9SxLR05eS.js" async></script>
 
 ## Описание игр:
 
