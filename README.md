@@ -1,14 +1,11 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/a4466a25feeafa74d822/maintainability)](https://codeclimate.com/github/baseven/project-lvl1-s438/maintainability)
 [![Build Status](https://travis-ci.com/baseven/project-lvl1-s438.svg?branch=master)](https://travis-ci.com/baseven/project-lvl1-s438)
 
-## Установка
-```
-npm isntall -g ba_hexlet-project1
+## Описание
+Набор консольных игр-викторин, где игроку предлагается ответить на три вопроса. Ответив на все правильно, игрок побеждает. Ошибка в ответе завершает игру.
 
-```
 ## Список игр
-Список игр:
-
+```
 1: brain-even
 
 2: brain-calc
@@ -18,15 +15,18 @@ npm isntall -g ba_hexlet-project1
 4: brain-progression
 
 5: brain-prime
+```
+## Установка
+```
+npm isntall -g ba_hexlet-project1
 
+```
+## Запуск
+Запуск приложения выполняется командой make start:
+[![asciicast](https://asciinema.org/a/gYS16wtgCylafRT8hHIb6TRk3.svg)](https://asciinema.org/a/gYS16wtgCylafRT8hHIb6TRk3)
 
-## Описание
-Набор консольных игр-викторин, где игроку предлагается ответить на три вопроса. Ответив на все правильно, игрок побеждает. Ошибка в ответе завершает игру.
-
-Запуск приложения выполняется командой make start
-
-Для запуска конкретной игры можно воспользоваться командой make <имя игры>, например, make calc.
-
+Для запуска конкретной игры можно воспользоваться командой make <имя игры>, например, make calc:
+[![asciicast](https://asciinema.org/a/DoFGhjaNregDxo1p9SxLR05eS.svg)](https://asciinema.org/a/DoFGhjaNregDxo1p9SxLR05eS)
 
 ## Описание игр:
 
@@ -66,18 +66,3 @@ Question: 7
 Your answer: yes
 Correct!
 ```
-
-brain-even. package installation and game launch
-[![asciicast](https://asciinema.org/a/AaWtd5LSUSd7POU4FhdtXrGbC.svg)](https://asciinema.org/a/AaWtd5LSUSd7POU4FhdtXrGbC)
-
-brain-calc. package installation and game launch
-[![asciicast](https://asciinema.org/a/kJrnrM19DCYrDxmSsNP1JFSbi.svg)](https://asciinema.org/a/kJrnrM19DCYrDxmSsNP1JFSbi)
-
-brain-gcd. package installation and game launch
-[![asciicast](https://asciinema.org/a/yF4439cH7htpfJx4Md077yXS6.svg)](https://asciinema.org/a/yF4439cH7htpfJx4Md077yXS6)
-
-brain-progression. package installation and game launch
-[![asciicast](https://asciinema.org/a/Sxj7SkWaUPUvokL7AP5hNA6nQ.svg)](https://asciinema.org/a/Sxj7SkWaUPUvokL7AP5hNA6nQ)
-
-brain-prime. package installation and game launch
-[![asciicast](https://asciinema.org/a/JFTLr9mqWhqO0MD4JlssCKkUP.svg)](https://asciinema.org/a/JFTLr9mqWhqO0MD4JlssCKkUP)
