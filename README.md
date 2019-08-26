@@ -18,7 +18,7 @@
 ```
 ## Установка
 ```
-npm isntall -g ba_hexlet-project1
+npm install -g ba_hexlet-project1
 ```
 ## Запуск
 Запуск приложения выполняется командой make start:
