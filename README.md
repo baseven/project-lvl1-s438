@@ -20,6 +20,8 @@
 ```
 npm install -g ba_hexlet-project1
 ```
+[![asciicast](https://asciinema.org/a/JBoW2mod2w0dSJYM57IA19BPs.svg)](https://asciinema.org/a/JBoW2mod2w0dSJYM57IA19BPs)
+
 ## Запуск
 Запуск приложения выполняется командой:
 ```
